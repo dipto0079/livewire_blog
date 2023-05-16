@@ -16,6 +16,7 @@ class Counter extends Component
     }
     public function render()
     {
-        return view('livewire.counter');
+        $data =['name'=>'test app','mno'=>'012222222222','data'=>'fhggggggggggggg'];
+        return view('livewire.counter',['data'=>$data]);
     }
 }
